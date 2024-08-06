@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Change Background Color</title>
   </head>
-  <body id="bodyTag">
+  <body id="bodyElement">
     <script>
-      const bodyTagElement = document.getElementById("bodyTag");
-      const colorItems = ["yellow", "green", "red", "pink", "purple"];
+      const bodyTag = document.getElementById("bodyElement");
 
-      const changeColor = () => {
-        const color = colorItems[Math.floor(Math.random() * colorItems.length)];
+      const changeBackground = () => {
+        const colors = ["red", "green", "yellow", "purple", "blue"];
+        const color = colors[Math.floor(Math.random() * colors.length)];
         bodyTag.style.backgroundColor = color;
       };
 
-      setInterval(changeColor, 100);
+      setInterval(changeBackground, 10);
     </script>
   </body>
 </html>
